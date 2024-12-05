@@ -4,14 +4,14 @@ from expense_manager_library.data_cleaner import categorize_transactions
 from expense_manager_library.visualizer import load_data
 from expense_manager_library.report_generator import generate_report, save_report_to_pdf
 
-#데이터 가져오기
+#파일 경로 지정, 데이터 가져오기
 file_path = "demo/demo_data.csv"
 data = file_path
 
 #카테고리 분류
 categorized_data = categorize_transactions(data)
 
-#결과 폴더에 저장
+#결과를 폴더에 저장
 categorized_data = load_data("results/classified_data.csv")
 
 #보고서 생성
