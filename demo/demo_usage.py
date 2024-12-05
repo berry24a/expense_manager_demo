@@ -1,5 +1,3 @@
-import pandas as pd
-import os
 from expense_manager_library.data_cleaner import categorize_transactions
 from expense_manager_library.visualizer import load_data
 from expense_manager_library.report_generator import generate_report, save_report_to_pdf
